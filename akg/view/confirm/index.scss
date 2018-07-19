@@ -1,0 +1,352 @@
+@import "../../lib/common.scss";
+*{
+  margin: 0;
+  padding: 0;
+}
+.header-div{
+  background-image: url("../taskTwo/img/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  padding-top: 27%;
+  height: 23em;
+}
+.body_main1
+{
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+}
+.information
+{
+  height: 17%;
+}
+.information-img
+{
+  width: 5.5%;
+  margin-bottom: 0.6em;
+}
+.information-span
+{
+  font-size: 1.8em;
+  color: #41B284;
+  margin-left: 0.5em;
+  letter-spacing: 0.08em;
+}
+.hr{
+  width: 100%;
+  height: 0.1em;
+  background-color: #41B284;
+}
+
+.name-identity
+{
+  margin-top: 3%;
+  height: 13%;
+}
+.name-identity_name
+{
+  width: 45%;
+  height: 100%;
+  float: left;
+}
+.name-identity_identity
+{
+  width: 45%;
+  height: 100%;
+  float: right;
+}
+.middle_span
+{
+  width: 30%;
+  color: #363636;
+  margin-left: 5%;
+  font-size: 1.5em;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif
+}
+.middle_span2
+{
+  width: 30%;
+  color: #707070;
+  margin-left: 5%;
+  font-size: 1.5em;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif
+}
+.middle_input
+{
+  width: 68%;
+  margin-left: 5%;
+  font-size: 1.4em;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  color: #AEAEAE;
+}
+
+.certificate-all
+{
+  margin: 0 auto;
+  margin-top: 3%;
+  width: 96%;
+  height: 13%;
+}
+
+.middle_span-order
+{
+  width: 30%;
+  color: #363636;
+  font-size: 1.5em;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif
+}
+.middle_input-order
+{
+  width: 68%;
+  outline: none;
+  margin-left: 5%;
+  font-size: 1.4em;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  color: #AEAEAE;
+}
+
+
+
+
+.component-div{
+  background-color: #67C19D;
+  width: 100%;
+  height: 50em;
+}
+.content-div
+{
+  background-color: #FFFFFF;
+  width: 92.1%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+
+
+
+
+
+.body_main2
+{
+  margin: 0 auto;
+  height: 10.5%;
+  width: 87%;
+}
+.information2
+{
+  height: 52%;
+  padding-top: 1%;
+}
+.information-img2
+{
+  width: 5.5%;
+  margin-bottom: 0.6em;
+}
+.information-span2
+{
+  font-size: 1.8em;
+  color: #41B284;
+  margin-left: 0.5em;
+  letter-spacing: 0.08em;
+}
+
+
+
+.body_main3
+{
+  margin: 0 auto;
+  height: 15%;
+  width: 87%;
+  padding-top: 3%;
+}
+.information3
+{
+  height: 48%;
+  padding-top: 1%;
+}
+.information-img3
+{
+  width: 5.5%;
+  margin-bottom: 0.6em;
+}
+.information-span3
+{
+  font-size: 1.8em;
+  color: #41B284;
+  margin-left: 0.5em;
+  letter-spacing: 0.08em;
+}
+
+
+.body_main4
+{
+  margin: 0 auto;
+  margin-top: 1%;
+  height: 46%;
+  width: 87%;
+}
+.information4
+{
+  height: 12%;
+  padding-top: 1%;
+}
+.information-img4
+{
+  width: 5.5%;
+  margin-bottom: 0.6em;
+}
+.information-span4
+{
+  font-size: 1.8em;
+  color: #41B284;
+  margin-left: 0.5em;
+  letter-spacing: 0.08em;
+}
+.name-identity4
+{
+  margin-top: 1%;
+  height: 13%;
+}
+.name-identity_name4
+{
+  width: 50%;
+  height: 84%;
+  float: left;
+  background-color: #ECF7F1;
+  border-radius: 5px;
+}
+.name-identity_identity4
+{
+  width: 48%;
+  height: 84%;
+  float: right;
+  background-color: #ECF7F1;
+  border-radius: 5px;
+}
+.middle_span4-1
+{
+  width: 30%;
+  color: #363636;
+  margin-left: 10%;
+  font-size: 1.5em;
+  line-height: 2em;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif
+}
+.middle_span4-2
+{
+  width: 30%;
+  color: #D0585A;
+  margin-left: 10%;
+  font-size: 1.5em;
+  line-height: 2em;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif
+}
+.middle_input4
+{
+  width: 68%;
+  margin-left: 5%;
+  font-size: 1.4em;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  color: #AEAEAE;
+}
+
+
+
+.body_main5
+{
+  margin: 0 auto;
+  margin-top: 3%;
+  height: 8.5%;
+  width: 87%;
+}
+.information5
+{
+  height: 100%;
+  padding-top: 3%;
+}
+.information-img5
+{
+  width: 6%;
+  margin-bottom: 0.6em;
+}
+.information-span5
+{
+  font-size: 1.8em;
+  color: #41B284;
+  margin-left: 0.7em;
+  letter-spacing: 0.08em;
+}
+.footer-button
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: 2%;
+}
+.submit-button{
+  width: 80%;
+  height: auto;
+}
+.footer-img
+{
+  width: 100%;
+  height: auto;
+}
+
+
+.modal-img
+{
+  width: 90%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.modal-img-1
+{
+  width: 5%;
+  height: auto;
+  position: absolute;
+  left: 91%;
+  right: 0;
+  bottom: 0;
+  top: 22%;
+}
+.modal-content-1
+{
+  width: 90%;
+  height: 10%;
+  position: absolute;
+  left: 5%;
+  right: 0;
+  bottom: 0;
+  top: 54%;
+  text-align: center;
+  font-size: 1.6em;
+}
+.modal-content-1 p
+{
+  color: #505050;
+}
+.modal-button-1
+{
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 39%;
+}
+.submit-button-1
+{
+  width: 70%;
+  height: auto;
+}
+
+//GEN_SASS

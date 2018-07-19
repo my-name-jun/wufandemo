@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>login</title>
+</head>
+<body :controller="vm" class="ms-controller">
+<!-- GEN_COMPONENT -->
+<div class="control-div">
+    <div class="body_main1">
+        <div class="information">
+            <img :attr="{src:@tbfill_icon}" alt="" class="information-img">
+            <span class="information-span">投保人信息</span>
+        </div>
+
+        <div class="name-identity">
+            <div class="name-identity_name">
+                <span class="middle_span">姓名</span>
+                <input type="text" class="middle_input" placeholder="请输入投保人姓名">
+            </div>
+            <div class="name-identity_identity">
+                <span class="middle_span">证件类型</span>
+                <span>
+                    <img :attr="{src:@tbfill_nochoose_btn}" alt="" class="middle_img">
+                </span>
+                <span>
+                    <span class="middle_span2">身份证</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="certificate-all">
+            <span class="middle_span-order">证件号码</span>
+            <input type="text" class="middle_input-order" placeholder="请输入证件号码">
+        </div>
+        <div class="certificate-all">
+            <span class="middle_span-order">手机号码</span>
+            <input type="text" class="middle_input-order" placeholder="请输入手机号码">
+        </div>
+        <div class="certificate-all">
+            <span class="middle_span-order">邮箱地址</span>
+            <input type="text" class="middle_input-order" placeholder="请输入邮箱地址，接收电子保单">
+        </div>
+    </div>
+
+
+    <div class="body_main2">
+        <div class="information2">
+            <img :attr="{src:@tbfill_icon}" alt="" class="information-img2">
+            <span class="information-span">被保人信息</span>
+        </div>
+
+        <div class="name-identity2">
+            <div class="name-identity_name2">
+                <span class="middle_span2-1">姓名</span>
+                <input type="text" class="middle_input2" placeholder="请输入投保人姓名">
+            </div>
+            <div class="name-identity_identity2">
+                <span class="middle_span2-1">与被保人关系</span>
+                <span>
+                    <img :attr="{src:@tbfill_nochoose_btn}" alt="" class="middle_img2">
+                </span>
+                <span>
+                    <span class="middle_span2-2">本人</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="certificate-all2">
+            <span class="middle_span-order2">证件号码</span>
+            <span>
+                    <img :attr="{src:@tbfill_nochoose_btn}" alt="" class="middle_span-order2-img">
+                </span>
+            <span>
+                    <span class="middle_span-order2-span">身份证</span>
+                </span>
+        </div>
+        <div class="certificate-all2">
+            <span class="middle_span-order2">证件号码</span>
+            <input type="text" class="middle_input-order2" placeholder="请输入证件号码">
+        </div>
+        <div class="certificate-all">
+            <span class="middle_span-order2">手机号码</span>
+            <input type="text" class="middle_input-order2" placeholder="请输入手机号码">
+        </div>
+        <div class="certificate-all2">
+            <span class="middle_span-order2">邮箱地址</span>
+            <input type="text" class="middle_input-order2" placeholder="请输入邮箱地址，接收电子保单">
+        </div>
+
+    </div>
+
+
+    <div class="body_main3">
+        <div class="body_main3">
+            <div class="information3">
+                <img :attr="{src:@tbfill_nochoose_btn}" alt="" class="information-img2">
+                <span class="information-span3">我以阅读
+                    <span style="color: #41B284;">《投保须知》</span>和
+                    <span style="color: #41B284;">《保险条款》</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <button class="footer-button">
+        <img :attr="{src:@tbfill_next_dis_btn}" alt="" class="submit-button">
+    </button>
+</div>
+
+
+
+<!-- GEN_FOOTER -->
+</body>
+
+</html>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>login</title>
+</head>
+<body :controller="vm" class="ms-controller">
+<!-- GEN_COMPONENT -->
+<form role="form">
+    <div class="body_main">
+        <div class="middle1">
+            <div class="imgshiying">
+                <img :attr="{src:@tbmain_icon0}" alt="" class="headerImg">
+                <span>投保计划</span>
+                <br/>
+            </div>
+            <div class="middle_div">
+                <span class="middle_span">投保年龄</span>
+                <input type="text" class="middle_input" placeholder="18周岁-60周岁">
+            </div>
+
+            <div class="middle_div">
+                <span class="middle_span">投保起保日期</span>
+                <span class="input-append date form_datetime">
+                    <input size="16" type="text" value="" class="middle_input" placeholder="2016-08-22 13:15" readonly>
+                    <span class="add-on"><i class="icon-th"></i></span>
+                </span>
+            </div>
+
+            <div class="middle_div">
+                <span class="middle_span">投保结束日期</span>
+                <span class="input-append date form_datetime">
+                    <input size="16" type="text" value="" class="middle_input" placeholder="2016-08-22 13:15" readonly>
+                    <span class="add-on"><i class="icon-th"></i></span>
+                </span>
+            </div>
+        </div>
+        <div class="middle2">
+            <div class="imgshiying">
+                <img :attr="{src:@tbmain_icon1}" alt="" class="headerImg">
+                <span>基本保障</span>
+                <br/>
+            </div>
+            <div class="middle_div2">
+                <span class="middle_span2">身故及残疾意外伤害</span>
+                <input type="text" class="middle_input2" placeholder="10万">
+            </div>
+        </div>
+
+        <div class="middle3">
+            <div class="imgshiying">
+                <img :attr="{src:@tbmain_icon2}" alt="" class="headerImg">
+                <span>附加保障</span>
+                <br/>
+            </div>
+            <div class="middle_div3">
+                <span class="middle_span2">公车交通工具意外伤害</span>
+                <select name="career_select" id="career_select" class="middle3_select" :duplex="@career_selected_item">
+                    <option value="" style="color: #C0C0C0">10万</option>
+                    <option :for='(index,item) in @career_candidate_select_array'
+                            :attr="{value:@item.id}">
+                        {{@item.name}}
+                    </option>
+                </select>
+                <div>
+                     <img :attr="{src:@tbmain_cbb_btn}" alt="" class="middle_img3">
+                </div>
+            </div>
+            <div class="middle_div3">
+                <span class="middle_span2" >自驾车意外伤害</span>
+                <input type="text" class="middle_input" style="width: 50%" placeholder="10万">
+            </div>
+            <div class="middle_div3">
+                <span class="middle_span2">意外住院补贴</span>
+                <input type="text" class="middle_input" placeholder="100元/天">
+            </div>
+            <div class="middle_div3">
+                <span class="middle_span2">意外伤害医疗</span>
+                <input type="text" class="middle_input" placeholder="2000元">
+            </div>
+        </div>
+
+
+
+        <div class="middle4">
+            <img :attr="{src:@tbmain_icon3}" alt="" class="middle4_img">
+            <span class="middle4_span">保费价格&nbsp;&nbsp;￥xxx元</span>
+
+        </div>
+        <button class="middle5">
+            <img :attr="{src:@tbfill_next_sel_btn}" alt="" class="footImg">
+        </button>
+    </div>
+
+</form>
+<!-- GEN_FOOTER -->
+</body>
+
+</html>
+

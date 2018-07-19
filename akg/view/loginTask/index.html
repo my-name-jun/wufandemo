@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>login</title>
+</head>
+<body :controller="vm" class="ms-controller">
+<div>
+    <!-- GEN_HEADER -->
+    <!-- GEN_COMPONENT -->
+
+    <div class="imgshiying">
+        <img :attr="{src:@img}" class="imgshiying_img1" alt="">
+    </div>
+
+    <div class="input_box">
+
+
+    </div>
+
+
+    <div></div>
+    <!--按钮下拉菜单-->
+    <form class="form-group bodyImg" role="form">
+
+        <div class="body_main">
+            <div class="body_1">
+                <div class="body_1_left">
+                    <span class="body_1_left_span">地区</span>
+                </div>
+                <div class="body_1_right">
+                    <select name="career_select" id="career_select" class="right" :duplex="@career_selected_item">
+                        <option value="">广东</option>
+                        <option :for='(index,item) in @career_candidate_select_array'
+                                :attr="{value:@item.id}">
+                            {{@item.name}}
+                        </option>
+                    </select>
+                    <div class="cbb_button">
+                        <img :attr="{src:@cbb_btn}" width="50%" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="body_2">
+                <div class="body_1_left" style="padding-left: 1.2%">
+                    <span class="body_2_left_span">投保人姓名</span>
+                </div>
+                <div class="body_1_right">
+                    <input type="text" class="right2" placeholder="请输入" id="name_input" :duplex="@name">
+                </div>
+            </div>
+            <div class="body_3">
+                <div class="body_1_left" style="padding-left: 4%">
+                    <span class="body_3_left_span">身份证</span>
+                </div>
+                <div class="body_1_right">
+                    <input type="text" class="right3" placeholder="用于免费险投保" id="number_input" :duplex="@number">
+                </div>
+            </div>
+            <div class="body_4">
+                <div class="body_1_left" style="padding-left: 3%">
+                    <span class="body_4_left_span">手机号码</span>
+                </div>
+                <div class="body_1_right">
+                    <input type="text" class="right4" placeholder="您的信息将被严格保密" id="mobile_input" :duplex="@mobile">
+                </div>
+            </div>
+            <div class="imgshiying imgbutton">
+                <img :attr="{src:@img_button}" class="imgshiying_img2" alt="" onclick="" :click="@anyFuncti">
+            </div>
+            <div class="foot">
+                <img onclick="" :click="@tick" :if="!@isTick" :attr="{src:@check_1}" class="check1" id="check"
+                     alt=""><img onclick="" :click="@tick" :if="@isTick" :attr="{src:@check_0}" class="check1"
+                                 id="check0" alt="">本人已阅读<span
+                    style="color: red">《<u>活动规则</u>》</span>,并同意招商信诺人寿保险有限公司提供后续保险服务。
+            </div>
+
+        </div>
+
+
+    </form>
+
+
+    <!--  <div class="form-group">
+      <span class="left1">地  区</span>
+       <select name="career_select" id="career_select" class="career_select career_select_test form-control right" :duplex="@career_selected_item">
+              <option value="">请选择</option>
+              <option :for='(index,item) in @career_candidate_select_array'
+                    :attr="{value:@item.key}">
+                  {{@item.value}}
+              </option>
+          </select>
+      </div>
+
+      <div class="form-group">
+              <span class="left2" >投保人姓名</span>
+          <input type="text" class="right2" placeholder="请输入" >
+      </div>
+
+      <div class="form-group">
+          <span class="left3" >身份证</span>
+          <input type="text" class="right3" placeholder="用于免费险投保" >
+          </select>
+      </div>
+
+      <div class="form-group">
+          <span class="left4" >手机号码</span>
+          <input type="text" class="right4" placeholder="您的信息将被严格保密" >
+          </select>
+      </div>
+
+      <div class="form-group">
+          <button id="submit" class="button"></button>
+      </div>-->
+    <!--   <div class="row">
+           <div class="form-group">
+               <div class="input-group">
+               <span class="input-group-btn">
+                   <button class="btn btn-default" type="button">地区</button>
+               </span>
+                   <select name="career_select" id="career_select" class="career_select career_select_test form-control" :duplex="@career_selected_item">
+                       <option value="">请选择</option>
+                       <option :for='(index,item) in @career_candidate_select_array'
+                               :attr="{value:@item.key}">
+                           {{@item.value}}
+                       </option>
+                   </select>
+               </div>&lt;!&ndash; /input-group &ndash;&gt;
+           </div>&lt;!&ndash; /.col-lg-6 &ndash;&gt;
+           <br>
+       </div>
+
+       &lt;!&ndash;输入框&ndash;&gt;
+       <div class="row">
+           <div class="form-group">
+               <div class="input-group">
+               <span class="input-group-btn">
+                   <button class="btn btn-default" type="button">投保人姓名</button>
+               </span>
+                   <input type="text" class="form-control" placeholder="请输入" :duplex="@name">
+               </div>&lt;!&ndash; /input-group &ndash;&gt;
+           </div>&lt;!&ndash; /.col-lg-6 &ndash;&gt;
+           <br>
+       </div>
+
+       <div class="row">
+           <div class="form-group">
+               <div class="input-group">
+               <span class="input-group-btn">
+                   <button class="btn btn-default" type="button">身份证</button>
+               </span>
+                   <input type="text" class="form-control" placeholder="用于免费险投保" :duplex="@number">
+               </div>&lt;!&ndash; /input-group &ndash;&gt;
+           </div>&lt;!&ndash; /.col-lg-6 &ndash;&gt;
+           <br>
+       </div>
+
+
+
+
+       <div class="row">
+           <div class="form-group">
+               <div class="input-group">
+               <span class="input-group-btn">
+                   <button class="btn btn-default" type="button">手机号码</button>
+               </span>
+                   <input type="tel" class="form-control" placeholder="您的信息将被严格保密" :duplex="@mobile">
+               </div>&lt;!&ndash; /input-group &ndash;&gt;
+           </div>&lt;!&ndash; /.col-lg-6 &ndash;&gt;
+           <br>
+       </div>
+       &lt;!&ndash;提交按钮&ndash;&gt;
+       <button id="submit" class="btn btn-info btn-block" onclick="" :click="@anyFuncti">免费领取 &GT;</button>
+
+       <div class="form-group">
+               <div class="checkbox">
+                   <label>
+                       <input type="checkbox">本人已阅读<span style="color: red">《<u>活动规则</u>》</span>,并同意招商信诺人寿保险有限公司提供后续保险服务。
+                   </label>
+               </div>
+       </div>-->
+    </form>
+    <!-- GEN_FOOTER -->
+</div>
+</body>
+
+</html>
+

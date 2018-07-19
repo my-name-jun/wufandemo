@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>pay</title>
+</head>
+
+<body :controller="vm" class="ms-controller">
+<div class="container">
+    <!-- GEN_HEADER -->
+
+    <div>
+        <input type="text" name="input" id="name_input" :duplex="@name">
+        <input type="text" name="mobile" id="mobile_input" :duplex="@mobile">
+        <select name="gender" id="gender_select" :duplex="@gender">
+            <option value="1">男</option>
+            <option value="2">女</option>
+        </select>
+        <button id="submit" onclick="" :click="@anyFuncti">提交</button>
+
+
+    </div>
+
+
+
+
+
+    <div class="form-group">
+        <label id="career_select_label">选择器</label>
+        <select name="career_select" id="career_select" class="career_select career_select_test form-control" :duplex="@career_selected_item">
+            <option value="">请选择</option>
+            <option :for='(index,item) in @career_candidate_select_array'
+                    :attr="{value:@item.key}">
+                {{@item.value}}
+            </option>
+        </select>
+    </div>
+
+
+
+
+
+    <div id="contact_address_userInfo_contact_address">
+        <label>contact_address_userInfo_日期组件</label>
+        <div class="col-xs-12 col-sm-12 contact_address_userInfo_selectBox">
+            <select name="contact_address_userInfo_province" id="contact_address_userInfo_province" class="contact_address_userInfo_province contact_address_userInfo_province_test col-xs-4 col-sm-4 contact_address_userInfo_height"
+                    :duplex="@contact_address_userInfo_selected_province">
+                <option value="">请选择</option>
+                <option :for='(index,item) in @contact_address_userInfo_candidate_provinces'
+                        :attr="{value:@item.id}">
+                    {{@item.name}}
+                </option>
+            </select>
+            <select name="contact_address_userInfo_city" id="contact_address_userInfo_city" class="contact_address_userInfo_city contact_address_userInfo_city_test col-xs-4 col-sm-4 contact_address_userInfo_height" :duplex="@contact_address_userInfo_selected_city">
+                <option value="">请选择</option>
+                <option :for='(index,item) in @contact_address_userInfo_candidate_cities'
+                        :attr="{value:@item.id}">
+                    {{@item.name}}
+                </option>
+
+            </select>
+
+            <select name="contact_address_userInfo_district" id="contact_address_userInfo_district" class="contact_address_userInfo_district contact_address_userInfo_district_test col-xs-4 col-sm-4 contact_address_userInfo_height"
+                    :duplex="@contact_address_userInfo_selected_district">
+                <option value="">请选择</option>
+                <option :for='(index,item) in @contact_address_userInfo_candidate_districts'
+                        :attr="{value:@item.id}">
+                    {{@item.name}}
+                </option>
+
+            </select>
+        </div>
+    </div>
+    <!-- GEN_FOOTER -->
+</div>
+</body>
+
+</html>

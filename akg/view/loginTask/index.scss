@@ -1,0 +1,226 @@
+@import "../../lib/common.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFD900;
+}
+.bodyImg{
+    height: 740px;
+   /* background-image: url("./xlb_bg_02.png");*/
+    background-size: contain;
+    width: 100%;
+}
+
+.imgshiying{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.imgshiying_img1{
+    width:100%;
+    height:auto;
+}
+.imgshiying_img2{
+    width:80%;
+    height:auto;
+}
+.imgbutton{
+    margin-top: 3%;
+}
+
+.body_main{
+    width: 93%;
+    height: 51%;
+    background: #FFFFFF;
+    margin: auto;
+    padding-top: 1.2%;
+    border-left: 2px solid #480A1C;
+    border-right: 2px solid #480A1C;
+    border-bottom: 2px solid #480A1C;
+    margin-left: 2.9%;
+    box-shadow: 10px 10px 3px #E8383C;
+}
+.body_1{
+    width: 90%;
+    height: 10%;
+    margin-left: 5%;
+    border: 2px solid #480A1C;
+    border-radius: 10px;
+}
+.body_1_left{
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding-left: 6%;
+    border-right: 2px solid #480A1C;
+}
+.body_1_right{
+    float: right;
+    width: 70%;
+    height: 100%;
+    padding-left: 3%;
+}
+.body_1_left_span{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2em;
+    letter-spacing: 1.1em;
+}
+.body_2_left_span{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2.4em;
+    letter-spacing: 0.2em;
+
+}
+.body_3_left_span{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2.4em;
+    letter-spacing: 0.8em;
+
+}
+.body_4_left_span{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2.4em;
+    letter-spacing: 0.4em;
+}
+
+
+
+.body_2{
+    width: 90%;
+    height: 12%;
+    margin-top: 3.8%;
+    margin-left: 5%;
+    border: 2px solid #480A1C;
+    border-radius: 10px;
+}
+.body_3{
+    width: 90%;
+    height: 12%;
+    margin-top: 4%;
+    margin-left: 5%;
+    border: 2px solid #480A1C;
+    border-radius: 10px;
+}
+.body_4{
+    width: 90%;
+    height: 12%;
+    margin-top: 4.1%;
+    margin-left: 5%;
+    border: 2px solid #480A1C;
+    border-radius: 10px;
+}
+
+.foot{
+    width: 80%;
+    height: 8%;
+    margin: auto;
+    margin-top: 2.5%;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+.check1{
+    width: 6%;
+    margin-right: 3%;
+    margin-top: -1%;
+}
+.cbb_button{
+    float: right;
+    margin-top: -2.3em;
+    margin-right: -10%;
+}
+
+
+
+
+
+
+
+.button{
+    background: transparent;
+    /*background-image: url("./xlb_receive_btn.png");*/
+    background-size: contain;
+    border: none;
+    width: 75%;
+    height: 10%;
+    margin-left: 12%;
+    margin-top: 2%;
+}
+.button_value{
+    width: 100%;
+    height: 100%;
+}
+.left1{
+    margin-left: 51px;
+    font-size: 19px;
+    line-height: 56px;
+    letter-spacing: 23px;
+}
+.left2{
+    margin-left: 51px;
+    font-size: 19px;
+    line-height: 45px;
+}
+.left3{
+    margin-left: 51px;
+    font-size: 19px;
+    line-height: 55px;
+    letter-spacing: 19px;
+}
+.left4{
+    margin-left: 51px;
+    font-size: 19px;
+    line-height: 45px;
+    letter-spacing: 7px;
+}
+.right{
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    height: 80%;
+    margin-top: 1%;
+    font-size: 1.3em;
+}
+.right2{
+    width: 90%;
+    outline: none;
+    height: 80%;
+    margin-top: 1%;
+    font-size: 1.3em;
+}
+.right3{
+    width: 90%;
+    outline: none;
+    height: 80%;
+    font-size: 1.3em;
+}
+.right4{
+    width: 90%;
+    outline: none;
+    height: 80%;
+    font-size: 1.3em;
+}
+.contact_address_userInfo_selectBox{
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.contact_address_userInfo_province{
+}
+.contact_address_userInfo_height{
+    height: 34px;
+    font-size: 14px;
+}
+.contact_address_userInfo_city{
+    color:#000000;
+}
+.contact_address_userInfo_detail_addr{
+    margin-top: 5px;
+}//GEN_SASS

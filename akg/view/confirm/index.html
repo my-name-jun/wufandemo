@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>confirm</title>
+</head>
+
+<body :controller="vm" class="ms-controller">
+<!-- GEN_HEADER -->
+<div class="header-div">
+    <div class="body_main1">
+        <div class="information">
+            <img :attr="{src:@tbmain_icon4}" alt="" class="information-img">
+            <span class="information-span">投保人信息</span>
+        </div>
+        <div class="hr"></div>
+
+
+        <div class="name-identity">
+            <div class="name-identity_name">
+                <span class="middle_span">姓名：</span>
+                <span class="middle_input">1</span>
+            </div>
+            <div class="name-identity_identity">
+                <span class="middle_span">证件类型：</span>
+                <span>
+                    <span class="middle_span2">身份证</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="certificate-all">
+            <span class="middle_span-order">证件号码：</span>
+            <span class="middle_input-order">2</span>
+        </div>
+
+        <div class="certificate-all">
+            <span class="middle_span-order">手机号码：</span>
+            <span class="middle_input-order">2</span>
+        </div>
+
+        <div class="certificate-all">
+            <span class="middle_span-order">邮箱地址：</span>
+            <span class="middle_input-order">2</span>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- GEN_COMPONENT -->
+<div class="component-div">
+    <div class="content-div">
+        <div class="body_main2">
+            <div class="information2">
+                <img :attr="{src:@tbmain_icon4}" alt="" class="information-img2">
+                <span class="information-span2">被保人信息</span>
+            </div>
+            <div class="hr"></div>
+            <div class="certificate-all">
+                <span class="middle_span-order">与被保人关系：</span>
+                <span class="middle_input-order">3</span>
+            </div>
+
+        </div>
+        <div class="body_main3">
+            <div class="information3">
+                <img :attr="{src:@tbmain_icon0}" alt="" class="information-img3">
+                <span class="information-span3">投保信息</span>
+            </div>
+            <div class="hr"></div>
+            <div class="name-identity">
+                <div class="name-identity_name">
+                    <span class="middle_span">保障期限：</span>
+                    <span class="middle_input">1</span>
+                </div>
+                <div class="name-identity_identity">
+                    <span class="middle_span">受益人：</span>
+                    <span class="middle_span2">4</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="body_main4">
+            <div class="information4">
+                <img :attr="{src:@tbconfirm_icon2}" alt="" class="information-img4">
+                <span class="information-span4">保障额度</span>
+            </div>
+            <div class="hr"></div>
+            <div class="name-identity4" style="margin-top: 4%">
+                <div class="name-identity_name4" style="background-color: #54BB90">
+                    <span class="middle_span4-1" style="color: #FFFFFF">保障项目</span>
+                </div>
+                <div class="name-identity_identity4" style="background-color: #54BB90">
+                    <span class="middle_span4-1" style="color: #FFFFFF">保额</span>
+                </div>
+            </div>
+            <div class="name-identity4">
+                <div class="name-identity_name4">
+                    <span class="middle_span4-1">事故及残疾意外</span>
+                </div>
+                <div class="name-identity_identity4">
+                    <span class="middle_span4-2"></span>
+                </div>
+            </div>
+            <div class="name-identity4">
+                <div class="name-identity_name4">
+                    <span class="middle_span4-1">交通工具意外伤害</span>
+                </div>
+                <div class="name-identity_identity4">
+                    <span class="middle_span4-2"></span>
+                </div>
+            </div>
+            <div class="name-identity4">
+                <div class="name-identity_name4">
+                    <span class="middle_span4-1">自驾车意外伤害</span>
+                </div>
+                <div class="name-identity_identity4">
+                    <span class="middle_span4-2"></span>
+                </div>
+            </div>
+            <div class="name-identity4">
+                <div class="name-identity_name4">
+                    <span class="middle_span4-1">意外住院津贴</span>
+                </div>
+                <div class="name-identity_identity4">
+                    <span class="middle_span4-2">1</span>
+                </div>
+            </div>
+            <div class="name-identity4">
+                <div class="name-identity_name4">
+                    <span class="middle_span4-1">意外伤害医疗</span>
+                </div>
+                <div class="name-identity_identity4">
+                    <span class="middle_span4-2"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="body_main5">
+            <div class="information5">
+                <img :attr="{src:@tbmain_icon3}" alt="" class="information-img5">
+                <span class="information-span5">保费金额&nbsp;￥xxx元</span>
+            </div>
+        </div>
+
+        <button class="footer-button" data-toggle="modal" id="myModal-new">
+            <img :attr="{src:@tbconfirm_pay_btn}" alt="" class="submit-button">
+        </button>
+    </div>
+</div>
+<img :attr="{src:@bg_1}" alt="" class="footer-img">
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="">
+        <img :attr="{src:@tbsuccessful_pop}" alt="" class="modal-img">
+        <div class="">
+            <button data-dismiss="modal">
+                <img :attr="{src:@tbpop_shut_btn}" alt="" class="modal-img-1">
+            </button>
+        </div>
+        <div class="modal-content-1">
+            <p>恭喜您，保单将于次日零时生效。</p>
+            <p>请您及时登录邮箱阅览电子保单信息！</p>
+        </div>
+        <button class="modal-button-1" data-toggle="modal" id="" data-dismiss="modal">
+            <img :attr="{src:@tbpop_determine_btn}" alt="" class="submit-button-1">
+        </button>
+    </div>
+</div>
+<!-- GEN_FOOTER -->
+</body>
+
+</html>
